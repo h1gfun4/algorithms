@@ -11,7 +11,7 @@ def liner_search(lst, x):
         i += 1
 
 items = [2, 3, 5, 7, 11, 13, 17]
-print(liner_search(items,))#None
+print(liner_search(items, 1))#None
 print(liner_search(items, 7))# 3
 print(liner_search(items, 19))#None
 

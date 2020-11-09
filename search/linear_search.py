@@ -19,6 +19,8 @@ print(liner_search(items, 19))#None
 items = range(0, 1000000)
 count = 100
 
+start = datetime.now()
+
 for i in range(1, count):
     liner_search(items, 777777)
 

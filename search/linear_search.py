@@ -25,7 +25,7 @@ for i in range(1, count):
     liner_search(items, 777777)
 
 delta = datetime.now() - start 
-totalMicroseconds = delta.seconds*1000000 + delta.microseconds
+totalMicroseconds = delta.seconds * 1000000 + delta.microseconds
 
 print(totalMicroseconds / count)
 

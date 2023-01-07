@@ -1,17 +1,19 @@
 from datetime import datetime
+
 items = [4, 1, 5, 3, 2]
 
-#time complexity from 0(n log(n)) to 0(n^2)
-#space complexity 0(log(n))
+
+# time complexity from 0(n log(n)) to 0(n^2)
+# space complexity 0(log(n))
 def quick_sort(data):
     def sort(s_data, fst, lst):
         if fst >= lst:
             return
-        
+
         i, j = fst, lst
         x = s_data[(fst + lst) // 2]
 
-        while i <=j:
+        while i <= j:
             while s_data[i] < x:
                 i += 1
             while s_data[j] > x:
@@ -22,7 +24,9 @@ def quick_sort(data):
             sort(s_data, fst, j)
             sort(s_data, i, lst)
         return s_data
+
     return sort(list(data), 0, len(data) - 1)
+
 
 sortItems = quick_sort(items)
 # sortItems is [1, 2, 3, 4, 5]
@@ -43,4 +47,3 @@ delta = datetime.now() - start
 totalMicroseconds = delta.seconds * 1000000 + delta.microseconds
 
 print(totalMicroseconds)
-#about 412_947 microseconds

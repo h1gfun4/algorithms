@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 def liner_search(lst, x):
     i = 0
     count = len(lst)
@@ -10,10 +11,11 @@ def liner_search(lst, x):
             return i if i < count else None
         i += 1
 
+
 items = [2, 3, 5, 7, 11, 13, 17]
-print(liner_search(items, 1))#None
-print(liner_search(items, 7))# 3
-print(liner_search(items, 19))#None
+print(liner_search(items, 1))  # None
+print(liner_search(items, 7))  # 3
+print(liner_search(items, 19))  # None
 
 print(items)
 
@@ -31,5 +33,3 @@ delta = datetime.now() - start
 totalMicroseconds = delta.seconds * 1000000 + delta.microseconds
 
 print(totalMicroseconds / r_count)
-#about 124380.51 microseconds
-
